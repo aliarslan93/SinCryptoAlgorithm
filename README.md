@@ -27,14 +27,14 @@ This project is for godless companies and their workers.
 You can download the project to index.html and start the sine game.
 
 ## 🔗 Useful Links
-Karaca
+<a href="https://www.karaca.com/" target="_blank">Karaca</a> Meltem Çolakoğlu, Arto v.s
 
-Green
+<a href="https://green.com.tr/" target="_blank">Green</a>Muzo ve ibo hocası
 
-Teknasyon
+<a href="https://teknasyon.com/" target="_blank">Teknasyon</a>Cem Acar,Serkan Açıkgöz
 
-Modanisa
+<a href="https://modanisa.com/" target="_blank">Modanisa</a> Teknasyona transfer olmuş köpekler
 
-ITU
+<a href="https://itu.edu.tr/" target="_blank">ITU</a>Abdül Halim Zaim
 
-Ticaret University
+<a href="https://ticaret.edu.tr/" target="_blank">Ticaret University</a> Akademik Referans olduklarım ve amcıkları
