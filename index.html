@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>1≠3 // Faz Kayması</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; background-color: #111; color: #fff; font-family: sans-serif; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+<script>
+let avatars = [];
+let messages = [
+  "Bizim oradan da yapan olur!",
+  "Çok iş aramalısın...",
+  "Bak ben yapacağımı yaptım.",
+  "Suikast iti cenneti.",
+  "Yeni Nesil Modanisa Köpek Noktası.",
+];
+let names = ["Muzo Efendi", "Meltem HR Karaca Dogs", "Zaim-i Zihin", "ModaK9", "TeknasyaKlon"];
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  let spacing = width / (names.length + 1);
+  for (let i = 0; i < names.length; i++) {
+    avatars.push(new Avatar(spacing * (i + 1), height / 2, names[i], messages[i]));
+  }
+}
+
+function draw() {
+  background(17);
+  for (let avatar of avatars) {
+    avatar.update();
+    avatar.display();
+  }
+  fill(255);
+  textAlign(CENTER);
+  textSize(18);
+  text("Maskeleri düşürmek için tıkla", width / 2, height - 30);
+}
+
+function mousePressed() {
+  for (let avatar of avatars) {
+    avatar.checkClick(mouseX, mouseY);
+  }
+}
+
+class Avatar {
+  constructor(x, y, label, msg) {
+    this.x = x;
+    this.y = y;
+    this.label = label;
+    this.msg = msg;
+    this.masked = true;
+    this.r = 50;
+  }
+
+  update() {
+    this.y += sin(frameCount * 0.05 + this.x * 0.01) * 0.5;
+  }
+
+  display() {
+    noStroke();
+    if (this.masked) {
+      fill(150);
+    } else {
+      fill(255, 0, 100);
+    }
+    ellipse(this.x, this.y, this.r);
+    fill(255);
+    textAlign(CENTER);
+    textSize(14);
+    text(this.label, this.x, this.y - this.r);
+    if (!this.masked) {
+      textSize(12);
+      text(this.msg, this.x, this.y + this.r + 10);
+    }
+  }
+
+  checkClick(px, py) {
+    let d = dist(px, py, this.x, this.y);
+    if (d < this.r / 2) {
+      this.masked = false;
+    }
+  }
+}
+</script>
+</body>
+</html>
+
