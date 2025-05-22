@@ -7,9 +7,7 @@ Python
 
 Libraries:
 
-nginx
-Copy
-Edit
+<code>nginx</code> <br/>
 <code>pip install matplotlib numpy</code>
 # 🔧 What's Changed?
 The sine wave now displays 6 full cycles (previously it was 2).
