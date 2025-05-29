@@ -1,0 +1,11 @@
+[
+    {
+        "currency": "BTCUSDT",
+        "buy": "BTC",
+        "sell": "USDT",
+        "quantity_length": 5,
+        "quantity_int": false,
+        "price_length": 2,
+        "rate": 0.001
+    }
+]

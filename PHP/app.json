@@ -1,0 +1,7 @@
+{
+    "APP_TYPE": "sort",
+    "LEVEL": "strong",
+    "UP_ORDER": true,
+    "BOTTOM_ORDER": true,
+    "ORDER_POINT_ORDER": true
+}

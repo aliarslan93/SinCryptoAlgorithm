@@ -1,0 +1,15 @@
+[
+    {
+        "UserKey": 1,
+        "Name": "Ali",
+        "Surname": "ARSLAN",
+        "Balance": "200",
+        "API_KEY": "API_KEY",
+        "SECRET_KEY": "SECRET_KEY",
+        "Token_Name": "Give UserToken Name",
+        "E_MAIL": "ali.arslan.93@hotmailcom",
+        "Priority": 1,
+        "Order_Limit": 99999,
+        "Order_Type": "sort"
+    }
+]
