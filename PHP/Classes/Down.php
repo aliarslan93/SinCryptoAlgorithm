@@ -9,13 +9,13 @@ class Down implements TreshholdInterface
 {
     use Filter;
     /**
-     * 
+     * Fill in the blank
      * @param Array $list 
      * @return Array
      */
     public function validateToTreshholdOrder($list) {}
     /**
-     * 
+     * Fill in the blank
      * @param Array $list 
      * @return Array
      */
@@ -24,7 +24,7 @@ class Down implements TreshholdInterface
         return [];
     }
      /**
-     * 
+     * Fill in the blank
      * @param Array $list 
      * @return Array
      */
@@ -38,7 +38,7 @@ class Down implements TreshholdInterface
         return $route;
     }
     /**
-     * 
+     * Fill in the blank
      * @param Array $list 
      * @return boolean
      */

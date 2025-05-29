@@ -45,17 +45,48 @@ class Treshhold
     {
         $this->list = $list;
     }
+    /**
+     * Fill in the blank
+     * @param Array $list 
+     * @return Array
+     */
     public function decideListPoint($list) {}
+    /**
+     * Fill in the blank
+     * @param Array $list 
+     * @return Array
+     */
     public function getCheckPoint($points) {}
+    /**
+     * Fill in the blank
+     * @param Array $list 
+     * @return Array
+     */
     public function checkOrderPoint()
     {
-
+        if (true) {
+            return $data = ['orderColums'];
+        }
         return [];
     }
 
     public function pushPoint() {}
+    /**
+     * Fill in the blank
+     * @param Array $points 
+     * @return Array
+     */
     private function coverPointToList($points) {}
+    /**
+     * Fill in the blank
+     * @param Array $oldList 
+     * @param Array $newList 
+     * @return Array
+     */
     private function combineList($oldList, $newList) {}
+    /**
+     * Fill in the blank
+     */
     public function validateForSortOrder()
     {
         if (empty($this->file)) {
@@ -76,10 +107,12 @@ class Treshhold
         return [];
     }
     /**
+     * Fill in the blank
      * @return void
      */
     public function updatePoint() {}
     /**
+     * Fill in the blank
      * @return void
      */
     public function checkPoint() {}
