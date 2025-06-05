@@ -7,35 +7,35 @@ define('DOMAIN', "$serverUrl");
 define('ROOT_PATH', 'refcrypto');
 ini_set('display_errors', '0');
 ini_set('error_reporting', E_ALL);
-define('TIME_DIFF_VAL', 3);
-define('LIVE_TIME_DIFF_VAL', 5);
+define('TIME_DIFF_VAL', 6);//Please check on your serve timezone
+define('LIVE_TIME_DIFF_VAL', 5);// you can ignore this value
 
-define('LOST_LIMIT', -3);
-define('MAX_PER_USER_ORDER', 100);
-define('MAX_SORT_USER_ORDER', 200);
+define('LOST_LIMIT', 2);//if you are using probably service every day lost limit
+define('MAX_PER_USER_ORDER', 4);//If you have more user please limited max 5
+define('MAX_SORT_USER_ORDER', 8); // max sort order probably
 
-define('PATH_1M', 'Path Name');
-define('PATH_3M', 'Path Name');
-define('PATH_5M', 'Path Name');
-define('PATH_15M', 'Path Name');
-define('PATH_30M', 'Path Name');
-define('PATH_1H', 'Path Name');
-define('PATH_2H', 'Path Name');
-define('PATH_4H', 'Path Name');
-define('PATH_6H', 'Path Name');
-define('PATH_8H', 'Path Name');
-define('PATH_12H', 'Path Name');
-define('PATH_1D', 'Path Name');
-define('PATH_3D', 'Path Name');
-define('PATH_1W', 'Path Name');
+define('PATH_1M', 'abc');
+define('PATH_3M', 'abb');
+define('PATH_5M', 'abd');
+define('PATH_15M', 'add');
+define('PATH_30M', 'acc');
+define('PATH_1H', 'ock');
+define('PATH_2H', 'pic');
+define('PATH_4H', 'bit');
+define('PATH_6H', 'chi');
+define('PATH_8H', 'cip');
+define('PATH_12H', 'ara');
+define('PATH_1D', 'pra');
+define('PATH_3D', 'sma');
+define('PATH_1W', 'ama');
 
-define('SYNC_PATH', 'Path Name');
-define('SORT_ORDER_PATH', 'Path Name');
-define('ORDER_PATH', 'Path Name');
-define('TEMP_SYNC_PATH', 'Path Name');
-define('TRESHHOLD_PATH', 'Path Name');
-define('POSITION_PATH', 'Path Name');
-define('PROTECTIVE_PATH', 'Path Name');
+define('SYNC_PATH', 'sync');
+define('SORT_ORDER_PATH', 'sop');
+define('ORDER_PATH', 'op');
+define('TEMP_SYNC_PATH', 'tmpsync');
+define('TRESHHOLD_PATH', 'trshld');
+define('POSITION_PATH', 'pstion');
+define('PROTECTIVE_PATH', 'protective');
 
 define('CURRENCY_PATH', 'currencies');
 define('EXAMPLE_PATH', 'data-set');

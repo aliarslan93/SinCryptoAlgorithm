@@ -34,7 +34,18 @@ class Up implements TreshholdInterface
      */
     public function decideLineRoute($list)
     {
-        $route = 'string';
+        $route = 'complex';
+        $openRow = $list['open'];
+        $closeRow = $list['close'];
+        $middleRow = $list['middle'];
+        if ($openRow['route_line'] < $closeRow['route_line'] & $openRow['route_line'] < $middleRow['route_line'] & $middleRow['route_line'] < $closeRow['route_line']) {
+            $route = 'up';
+        }
+        if ($openRow['route_line'] > $closeRow['route_line'] & $openRow['route_line'] > $middleRow['route_line']) {
+            if ($openRow['average'] > $closeRow['average'] & $middleRow['asset'] > $closeRow['asset']) {
+                $route = 'down';
+            }
+        }
         return $route;
     }
     public function initConfig()
