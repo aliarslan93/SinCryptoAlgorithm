@@ -25,6 +25,26 @@ class Up implements TreshholdInterface
     public function validateReturnList($list)
     {
 
+        if (empty($list) || count($list) < 2) {
+            return [];
+        }
+
+        $openRow = $list['open'];
+        $closeRow = $list['close'];
+        $middleRow = $list['middle'];
+
+        $list['checkColumn'] = 'point';
+
+        /*
+        if ($openRow['color'] == 'green' & $middleRow['color'] == 'red' & $closeRow['color'] == 'green' & $list['deepPoint'] == 'close') {
+            return $list;
+        }
+       */
+        //Strong
+        if ($openRow['color'] == 'red' & $middleRow['color'] == 'green' & $closeRow['color'] == 'green' & $openRow['close'] > $openRow['average']) {
+            return $list;
+        }
+
         return [];
     }
     /**
