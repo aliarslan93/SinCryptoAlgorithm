@@ -15,6 +15,19 @@ class Up implements TreshholdInterface
     public function validateList($list)
     {
 
+        if (empty($list) || count($list) < 2) {
+            return [];
+        }
+
+        $config = $this->initConfig();
+        $openRow = $list['open'];
+        $closeRow = $list['close'];
+        $middleRow = $list['middle'];
+        $list['checkColumn'] = 'point';
+        if ($config['LEVEL' == 'strong'])
+            if ($openRow['color'] == 'line_color' & $middleRow['color'] == 'line_color' & $closeRow['color'] == 'line_color') {
+                return $list;
+            }
         return [];
     }
     /**

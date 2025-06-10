@@ -23,14 +23,30 @@ class Down implements TreshholdInterface
     {
         return [];
     }
-     /**
+    /**
      * Fill in the blank
      * @param Array $list 
      * @return Array
      */
     public function validateList($list, $passBigTreshhold = false)
     {
-        return [];
+        if (empty($list) || count($list) < 2) {
+            return [];
+        }
+        $config = $this->initConfig();
+        $openRow = $list['open'];
+        $closeRow = $list['close'];
+        $middleRow = $list['middle'];
+        $colors = $this->getColors($list);
+        $list['checkColumn'] = 'order_point';
+
+        if ($config['LEVEL'] == 'strong') {
+            if ($openRow['asset'] > $openRow['close'] || $closeRow['asset'] > $closeRow['close'] || $middleRow['asset'] > $middleRow['close']) {
+                if ($colors) {
+                    return $list;
+                }
+            }
+        }
     }
     public function decideLineRoute($list)
     {
