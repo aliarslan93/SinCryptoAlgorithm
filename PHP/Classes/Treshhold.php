@@ -12,9 +12,9 @@ class Treshhold
     protected $path;
     protected $currency;
     protected $file = [
-        'level_one' => [],
-        'level_two' => [],
-        'level_three' => [],
+        'level_one' => [], //33% Probably
+        'level_two' => [],//49% Probably
+        'level_three' => [],//33% Probably
     ];
     protected $selectedKey = null;
     protected $list;
