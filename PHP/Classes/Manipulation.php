@@ -38,6 +38,10 @@ class Manipulation extends Base
             $config = getConfig();
             $config['END_OF'] = getTimestamp() + (60 * 60 * $endTime); //Minutes and Seconds
             setConfig($config);
+            $price = $deepPoint[$deepPoint['deepPoint']]['average'];
+            $rate = $deepPoint['rate'];
+
+            file_put_contents(PATH_OF_MAN . "/up" . $this->currency . ".json", json_encode(['rate' => $rate, 'price' => $price]));
         }
     }
     public function downStart($endTime)
@@ -47,6 +51,10 @@ class Manipulation extends Base
             $config = getConfig();
             $config['END_OF'] = getTimestamp() + (60 * 60 * $endTime); //Minutes and Seconds
             setConfig($config);
+            $price = $peakPoint[$peakPoint['peakPoint']]['high'];
+            $rate = $peakPoint['rate'];
+
+            file_put_contents(PATH_OF_MAN . "/down_" . $this->currency . ".json", json_encode(['rate' => $rate, 'price' => $price]));
         }
     }
 }

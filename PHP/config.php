@@ -28,6 +28,7 @@ define('PATH_12H', 'ara');
 define('PATH_1D', 'pra');
 define('PATH_3D', 'sma');
 define('PATH_1W', 'ama');
+define('PATH_OF_MAN', 'man');
 
 define('SYNC_PATH', 'sync');
 define('SORT_ORDER_PATH', 'sop');

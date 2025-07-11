@@ -41,10 +41,14 @@ class Application extends Base
     public function startManipulation($sideOf = 'up')
     {
         $manipulation = new Manipulation($this->currency, '4h');
-        if ($sideOf == 'up') {
-            $manipulation->upStart(4);
+        if (getTimestamp() < $this->config['END_OF']) {
+            $this->livePrice = $this->priceFormat($this->api->price($this->currency));
+            if ($sideOf == 'up') {
+                $manipulation->upStart(4,$this->livePrice);
+            } else {
+                $manipulation->downStart(2,$this->livePrice);
+            }
         } else {
-            $manipulation->downStart(2);
         }
     }
     public function startSync(string $side)
