@@ -38,6 +38,15 @@ class Application extends Base
         curl_close($curl);
         dd($content);
     }
+    public function startManipulation($sideOf = 'up')
+    {
+        $manipulation = new Manipulation();
+        if ($sideOf == 'up') {
+            $manipulation->upStart();
+        }else{
+            $manipulation->downStart();
+        }
+    }
     public function startSync(string $side)
     {
         $times = $this->getTimeGroup($this->config['APP_TYPE']);
