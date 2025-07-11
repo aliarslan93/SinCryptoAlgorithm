@@ -257,6 +257,12 @@ if (!function_exists('getOrderable')) {
         }
     }
 }
+if (!function_exists('setConfig')) {
+    function setConfig($data)
+    {
+        file_put_contents('app.json', json_encode($data));
+    }
+}
 if (!function_exists('getConfig')) {
     function getConfig()
     {

@@ -40,11 +40,11 @@ class Application extends Base
     }
     public function startManipulation($sideOf = 'up')
     {
-        $manipulation = new Manipulation();
+        $manipulation = new Manipulation($this->currency, '4h');
         if ($sideOf == 'up') {
-            $manipulation->upStart();
-        }else{
-            $manipulation->downStart();
+            $manipulation->upStart(4);
+        } else {
+            $manipulation->downStart(2);
         }
     }
     public function startSync(string $side)

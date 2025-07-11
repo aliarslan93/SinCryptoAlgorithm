@@ -7,18 +7,18 @@ abstract class Constant
     const TIMES = [
 
         [
-            'name' => 'Example Time Name',
-            'limit' => -3,
-            'path' => 'Path Choose in Config.php',
-            'type' => 'give specific name of time',
+            'name' => '1m',
+            'limit' => 7,
+            'path' => PATH_1M,
+            'type' => 'Probably Time',
         ],
         [
-            'name' => 'Example Time Name',
-            'limit' => 10,
-            'path' => 'Path Choose in Config.php',
-            'type' => 'give specific name of time',
+            'name' => '4h',
+            'limit' => 4,
+            'path' => PATH_4H,
+            'type' => 'Long Time',
         ]
-        //Fill in the Blank for you
+        //Filled.
 
 
     ];

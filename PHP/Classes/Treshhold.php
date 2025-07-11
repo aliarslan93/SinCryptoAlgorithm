@@ -54,7 +54,67 @@ class Treshhold
      * @param Array $list 
      * @return Array
      */
-    public function decideListPoint($list) {}
+    public function decideListPoint($list) {
+        if (empty($list) || count($list) < 2) {
+            return [];
+        }
+        $highs = $this->orderByColName('high', $list, 'DESC');
+        $lows = $this->orderByColName('low', $list, 'ASC');
+        $deepPoint = $lows[array_key_first($lows)];
+        $peakPoint = $highs[array_key_first($highs)];
+
+        $closeKey = array_key_first($list);
+        $openKey = array_key_last($list);
+
+        $closeRow = $list[$closeKey];
+        $openRow = $list[$openKey];
+        $midList = $list;
+        unset($midList[$closeKey]);
+        unset($midList[$openKey]);
+        $middlePoint = $midList[array_key_first($midList)];
+        $middleRate = $this->priceFormat($middlePoint['high'] - $middlePoint['close']);
+        $deepRate = $this->priceFormat($deepPoint['high'] - $deepPoint['close']);
+        $totalRate = $middleRate + $deepRate;
+        if ($peakPoint['closeTime'] == $middlePoint['closeTime']) {
+            $peakKey = 'middle';
+        }
+
+        if ($peakPoint['closeTime'] == $openRow['closeTime']) {
+            $peakKey = 'open';
+        }
+
+        if ($peakPoint['closeTime'] == $closeRow['closeTime']) {
+            $peakKey = 'close';
+        }
+
+
+        if ($deepPoint['closeTime'] == $middlePoint['closeTime']) {
+            $deepKey = 'middle';
+        }
+
+        if ($deepPoint['closeTime'] == $openRow['closeTime']) {
+            $deepKey = 'open';
+        }
+
+        if ($deepPoint['closeTime'] == $closeRow['closeTime']) {
+            $deepKey = 'close';
+        }
+        return [
+            'close' => $closeRow,
+            'open' => $openRow,
+            'middle' => $middlePoint,
+            'peakPoint' => $peakKey,
+            'deepPoint' => $deepKey,
+            'rate' => $totalRate,
+            'opens' => $this->priceFormat($this->averageValue('open', $list)),
+            'lowest' => $this->priceFormat($this->averageValue('low', $list)),
+            'highest' => $this->priceFormat($this->averageValue('high', $list)),
+            'average' => $this->priceFormat($this->averageValue('average', $list)),
+            'volume' => $this->priceFormat($this->averageValue('volume', $list)),//***
+            'checkColumn' => 'Smile AFK',
+            'active' => LOST_LIMIT
+        ];
+    }
     /**
      * Fill in the blank
      * @param Array $list 
