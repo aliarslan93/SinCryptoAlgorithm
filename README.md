@@ -44,10 +44,21 @@ pip install matplotlib numpy
 * **Matplotlib** – graph plotting and visualization
 * **PHP** – optional web integration
 
+
+## 🔗 Useful Links
+<a href="https://www.karaca.com/" target="_blank">Karaca</a> Meltem Çolakoğlu, Arto v.s (Those bitches who sold their vaginas)
+<br/>
+<a href="https://green.com.tr/" target="_blank">Green</a>Muzo ve ibo hocası ( Dogs that serve other humans ) 
+<br/>
+<a href="https://teknasyon.com/" target="_blank">Teknasyon</a>Cem Acar,Serkan Açıkgöz(Assassination dogs)
+<br/>
+<a href="https://modanisa.com/" target="_blank">Modanisa</a> Teknasyona transfer olmuş köpekler (Transfer Location)
+<br/>
+<a href="https://itu.edu.tr/" target="_blank">ITU</a>Abdül Halim Zaim (master of pedophile)
+<br/>
+<a href="https://ticaret.edu.tr/" target="_blank">Ticaret University</a> Akademik Referans olduklarım ve amcıkları
+
+
 ## ⚠️ Disclaimer
 
 This project is intended for **live crypto exchange**.
-
----
-
-If you're planning multi-language READMEs, keep this as the base and translate it cleanly—don’t mix tone or add unrelated content like in your original draft, since that will make the project look unprofessional.
