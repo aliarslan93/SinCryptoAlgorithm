@@ -1,10 +1,12 @@
-# 🌊 Sine Wave Visualizer
+# 🌊 Sine Wave Visualizer ( Crypto Trading Bot)
 
 This project is a simple and interactive **sine wave visualization tool** built with Python and optionally served via PHP. It uses scientific libraries to generate smooth and customizable wave graphs, making it useful for learning, experimentation, and basic signal visualization.
 
-## 📌 Overview
+## 📌 Overview (Ai trading bot)
 
-The application plots sine waves with extended cycles and clearly defined intersection points. It demonstrates how mathematical wave functions can be visualized programmatically and optionally displayed in a web environment.
+The application visualizes sine waves with extended cycles and clearly defined intersection points, demonstrating how mathematical wave functions can be generated and displayed programmatically. It highlights the integration of mathematical modeling with software development, enabling both analytical insight and interactive visualization, including optional rendering in a web environment.
+
+In addition, I developed a smart investment system powered by artificial intelligence. This system analyzes data, identifies patterns, and generates insights to support more informed financial decision-making.
 
 ## 🚀 Features
 
