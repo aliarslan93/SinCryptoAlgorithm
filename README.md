@@ -46,7 +46,7 @@ pip install matplotlib numpy
 
 
 ## 🔗 Useful Links
-<a href="https://www.karaca.com/" target="_blank">Karaca</a> Meltem Çolakoğlu, Arto v.s (Those bitches who sold their vaginas)
+<a href="https://www.karaca.com/" target="_blank">Karaca</a> Meltem Çolak Güldeşiren, Arto v.s (Those bitches who sold their vaginas)
 <br/>
 <a href="https://green.com.tr/" target="_blank">Green</a>Muzo ve ibo hocası ( Dogs that serve other humans ) 
 <br/>
