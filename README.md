@@ -23,18 +23,18 @@ Intersection points are automatically extended: π, 2π, ..., 11π.
 The graph width is increased to accommodate more wave cycles.
 
 ## ⚠️ Note
-This project is for godless companies and their workers.
+This project is for godless companies, their workers and it was developed specifically for the clean, socially complicator dogs of the Republic of Turkey(TC).
 You can download the project to index.html and start the sine game.
 
 ## 🔗 Useful Links
-<a href="https://www.karaca.com/" target="_blank">Karaca</a> Meltem Çolakoğlu, Arto v.s
+<a href="https://www.karaca.com/" target="_blank">Karaca</a> Meltem Çolakoğlu, Arto v.s (Those bitches who sold their vaginas)
 
-<a href="https://green.com.tr/" target="_blank">Green</a>Muzo ve ibo hocası
+<a href="https://green.com.tr/" target="_blank">Green</a>Muzo ve ibo hocası ( Dogs that serve other humans ) 
 
-<a href="https://teknasyon.com/" target="_blank">Teknasyon</a>Cem Acar,Serkan Açıkgöz
+<a href="https://teknasyon.com/" target="_blank">Teknasyon</a>Cem Acar,Serkan Açıkgöz(Assassination dogs)
 
-<a href="https://modanisa.com/" target="_blank">Modanisa</a> Teknasyona transfer olmuş köpekler
+<a href="https://modanisa.com/" target="_blank">Modanisa</a> Teknasyona transfer olmuş köpekler (Transfer Location)
 
-<a href="https://itu.edu.tr/" target="_blank">ITU</a>Abdül Halim Zaim
+<a href="https://itu.edu.tr/" target="_blank">ITU</a>Abdül Halim Zaim (master of pedophile)
 
 <a href="https://ticaret.edu.tr/" target="_blank">Ticaret University</a> Akademik Referans olduklarım ve amcıkları
